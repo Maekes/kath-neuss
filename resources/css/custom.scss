@@ -1,0 +1,177 @@
+ul.sub-menu {
+    @apply flex flex-wrap lg:bg-white w-full lg:w-max lg:hidden lg:group-hover:block lg:absolute  lg:mt-16 lg:rounded-b-xl lg:shadow-md  lg:divide-y divide-gray-200 overflow-hidden;
+    .menu-item {
+        a {
+            @apply lg:py-3 lg:pr-10 font-normal hover:bg-gray-200;
+        }
+    }
+}
+.menu-item {
+    @apply lg:hover:bg-gray-100 font-semibold;
+    a {
+        @apply py-3 px-6 lg:py-0 lg:px-4 xl:px-6 h-full flex items-center hover:bg-gray-100 lg:hover:bg-none;
+    }
+}
+
+.menu-item-has-children {
+    @apply relative flex flex-col;
+}
+
+.gradient {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+.simple-scaling {
+    @apply transform duration-300 ease-in-out hover:scale-102;
+}
+
+.custom-logo {
+    @apply max-h-12 w-auto mx-2 inline;
+}
+h1 {
+    @apply text-5xl font-thin mb-8;
+}
+
+h2 {
+    @apply text-3xl font-semibold;
+}
+
+h3 {
+    @apply text-2xl font-medium;
+}
+
+main {
+    ul:not([class]) {
+        @apply list-disc pl-5 space-y-1;
+    }
+
+    ol:not([class]) {
+        @apply list-decimal pl-5 space-y-1;
+    }
+
+    li:not([class]) {
+        @apply pl-2 leading-relaxed;
+    }
+}
+
+.hypens {
+    -moz-hyphens: auto;
+    -o-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+article {
+    p,
+    h2,
+    h3,
+    hr.wp-block-separator {
+        @apply m-0 leading-relaxed;
+    }
+
+    .wp-block-columns {
+        @apply mb-0;
+    }
+    .article-content {
+        @apply space-y-6;
+    }
+
+    .person.aligncenter {
+        @apply flex justify-center;
+    }
+}
+
+article.pfarrnachrichten {
+    @apply space-y-4;
+}
+
+.page-numbers {
+    @apply transform duration-300 ease-in-out hover:scale-102;
+    @apply text-lg py-2 px-4 mr-2 rounded-lg shadow hover:shadow-md bg-white;
+}
+span.page-numbers {
+    @apply font-bold hover:shadow;
+}
+
+.entry-content,
+.block-editor-block-list__layout {
+    p,
+    ul,
+    ol {
+        a {
+            @apply text-blue-500 underline;
+
+            &:hover {
+                @apply no-underline;
+            }
+        }
+
+        @apply mb-8;
+    }
+
+    ul {
+        li {
+            @apply list-disc list-inside;
+        }
+    }
+
+    ol {
+        li {
+            @apply list-decimal list-inside;
+        }
+    }
+}
+
+.wp-block-buttons {
+    .wp-block-button {
+        @apply mb-4;
+    }
+}
+
+// SLIDER
+.slides {
+    @apply rounded-2xl overflow-hidden;
+    .slide {
+        img {
+            @apply object-cover;
+        }
+        .sf-6-slide-title {
+            @apply text-2xl font-semibold;
+        }
+    }
+}
+
+//Contact form
+.wpcf7-form {
+    @apply relative bg-white rounded-2xl shadow-lg p-8 pt-6 mb-8;
+    section {
+        @apply flex flex-col lg:flex-row space-x-0 lg:space-x-4 w-full;
+    }
+    label {
+        @apply w-full relative;
+        span {
+            @apply block mb-4;
+            input,
+            textarea {
+                @apply mt-1 block  w-full rounded-md border-gray-300 shadow-sm focus:border-green-800 focus:ring-0;
+            }
+            .wpcf7-not-valid {
+                @apply border-red-700;
+            }
+            .wpcf7-not-valid-tip {
+                @apply text-sm text-red-700 absolute right-0;
+            }
+        }
+    }
+    .wpcf7-spinner {
+        @apply absolute bottom-10 right-4;
+    }
+    .wpcf7-response-output {
+        @apply rounded text-gray-700 text-center border;
+    }
+
+    .wpcf7-submit {
+        @apply mx-auto text-lg cursor-pointer w-full lg:w-1/3 block rounded-md px-4 py-2 bg-green-600 hover:bg-green-500 text-white font-semibold shadow;
+    }
+}
