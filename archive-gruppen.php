@@ -5,44 +5,37 @@
     <h1><?php post_type_archive_title() ?></h1>
 
 
-    <?php
+        <?php //start by fetching the terms for gruppen taxonomy
+        $terms = get_terms( 'gruppenkategorie', array(
+            'orderby'    => 'count',
+            'hide_empty' => 0
+        ) );
 
-    $taxonomy = array( "name" => 'gruppenkategorie' , "slug" => 'gruppenkategorie');
-    $custom_post_type = "gurppen";
+        foreach( $terms as $term ) {
+            echo'<h2>' . $term->name . '</h2>';
+            // Define the query
+            $args = array(
+                'post_type' => 'gruppen',
+                'gruppen' => $term->slug
+            );
+            $query = new WP_Query( $args );
+   
+            
+            // Start the Loop
+            while ( $query->have_posts() ) : $query->the_post(); 
 
-        if ( have_posts() )
-            the_post();
+                get_template_part('template-parts/section', 'archive-default'); 
+            
+            php endwhile;
 
-            // Query your specified taxonomy to get, in order, each category
-            $categories = get_terms($taxonomy['name'], 'orderby=title');
-            foreach( $categories as $category ) {
-                 
-                global $post; // Access the global $post object.
 
-                // Setup query to return each custom post within this taxonomy category
-                $o_queried_posts = get_posts(array(
-                    'nopaging' => true,
-                    'post_type' => $custom_post_type,
-                    'taxonomy' => $category->taxonomy,
-                    'term' => $category->slug,
-                ));
+        // use reset postdata to restore orginal query
+        wp_reset_postdata();
+
+
+       
         ?>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-
-                <?php
-                // Loop through each custom post type
-                foreach($o_queried_posts as $post) : 
-                    setup_postdata($post); // setup post data to use the Post template tags. 
-
-                    get_template_part('template-parts/section', 'archive-default'); 
-                endforeach; 
-                wp_reset_postdata(); ?>
-                </div> 
-
-            <?php endforeach; ?>
-
-        <?php endif; ?>
 
 </div>
 
