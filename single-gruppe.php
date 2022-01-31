@@ -1,1 +1,1 @@
-<?php load_template("mit-titelbild")?>
+<?php load_template("page-templates/mit-titelbild")?>
