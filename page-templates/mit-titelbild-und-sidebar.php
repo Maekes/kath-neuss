@@ -1,7 +1,7 @@
 <?php
 /* 
 Template Name: Mit Titelbild und Sidebar
-Template Post Type: gruppe
+Template Post Type: gruppen
 */
 
 get_header(); ?>
