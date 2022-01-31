@@ -1,20 +1,14 @@
 <div class="block shadow-xl rounded-2xl overflow-hidden bg-white relative">
     <div class="absolute -top-20 invisible" id="anschrift"></div>
-    <?php if (get_field('anschrift')) : ?>
-        <div class="relative w-full h-20 bg-cover bg-center shadow-inner " style="background-image: url('http://neussmitte.local/wp-content/uploads/2021/10/map.png');">
-            <a target="_blank" rel="noopener noreferrer" href="<?php the_field('google_maps_link'); ?>" class="bg-white bg-opacity-60 h-full flex flex-col group justify-between py-2 items-center shadow-inner">
-                <svg xmlns="http://www.w3.org/2000/svg" class=" h-16 w-16 group-hover:scale-105 transition ease-out duration-200" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <circle cx="12" cy="11" r="3" />
-                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                </svg>
+    <?php if (get_field('google_maps_link')) : ?>
+            <a target="_blank" rel="noopener noreferrer" href="<?php the_field('google_maps_link'); ?>" class="float-right">
+                <img src="/wp-content/uploads/2021/10/map_2.png" alt="" class="w-10 h-10>
                 <p class="text-sm font-bold  uppercase group-hover:scale-105 transition ease-out duration-200">in Google Maps öffnen</p>
             </a>
-        </div>
+    
     <?php endif; ?>
 
     <div class="px-4 py-2 space-y-2">
-
         <?php if (get_field('anschrift')) : ?>
             <div class="flex space-x-4">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-0.5" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
