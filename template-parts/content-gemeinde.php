@@ -28,7 +28,7 @@
 
     </div>
 
-    <div class="article-content px-4 lg:px-8 py-4 ">
+    <div class="article-content px-4 lg:px-8 py-4 hypens">
         <?php the_content(); ?>
     </div>
 
