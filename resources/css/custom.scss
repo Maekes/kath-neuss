@@ -71,7 +71,7 @@ article {
     }
 
     .wp-block-columns {
-        @apply mb-0;
+        @apply mb-0 space-y-4 sm:space-y-0;
     }
     .article-content {
         @apply space-y-6;
