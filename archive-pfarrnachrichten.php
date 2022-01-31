@@ -5,9 +5,9 @@
     <h1>Unsere Pfarrnachrichten</h1>
 
     <div class="flex flex-col lg:flex-row w-full rounded-2xl overflow-hidden bg-white shadow-lg">
-        <a class="h-80 lg:h-auto w-full lg:w-1/3 object-cover" href="http://neussmitte.local/wp-content/uploads/2021/10/Pfarrnachrichten-18-2021.pdf">
-            <object class="h-full w-full" type="application/pdf" data="http://neussmitte.local/wp-content/uploads/2021/10/Pfarrnachrichten-18-2021.pdf">
-                <a href="http://neussmitte.local/wp-content/uploads/2021/10/Pfarrnachrichten-18-2021.pdf">Download PDF</a>.</p>
+        <a class="h-80 lg:h-auto w-full lg:w-1/3 object-cover" href="/wp-content/uploads/2021/10/Pfarrnachrichten-18-2021.pdf">
+            <object class="h-full w-full" type="application/pdf" data="/wp-content/uploads/2021/10/Pfarrnachrichten-18-2021.pdf">
+                <a href="/wp-content/uploads/2021/10/Pfarrnachrichten-18-2021.pdf">Download PDF</a>.</p>
             </object>
         </a>
         <div class="flex-1 px-4 pt-4 pb-8 lg:p-8 lg:pt-6">
