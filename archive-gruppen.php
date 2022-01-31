@@ -8,7 +8,7 @@
     <?php
 
     $taxonomy = array( "name" => 'gruppenkategorie' , "slug" => 'gruppenkategorie');
-    $custom_post_type = get_queried_object()->name;
+    $custom_post_type = "gurppen";
 
         if ( have_posts() )
             the_post();
@@ -38,7 +38,7 @@
                     get_template_part('template-parts/section', 'archive-default'); 
                 endforeach; 
                 wp_reset_postdata(); ?>
-            </div> 
+                </div> 
 
             <?php endforeach; ?>
 
