@@ -1,6 +1,7 @@
 <?php
 /* 
 Template Name: Mit Titelbild
+Template Post Type: gruppe
 */
 
 get_header(); ?>
