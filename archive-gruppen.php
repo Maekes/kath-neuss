@@ -10,7 +10,8 @@
         //start by fetching the terms for gruppen taxonomy
         $terms = get_terms( 'gruppenkategorie', array(
             'orderby'    => 'count',
-            'hide_empty' => 0
+            'hide_empty' => 0,
+            'partent' => 0
         ) );
 
         foreach( $terms as $term ) {
