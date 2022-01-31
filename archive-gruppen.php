@@ -18,7 +18,7 @@
             // Define the query
             $args = array(
                 'post_type' => 'gruppen',
-                'gruppen' => $term->slug
+                'gruppenkategorie' => $term->slug
             );
             $query = new WP_Query( $args );
    
