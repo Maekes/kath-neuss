@@ -1,7 +1,7 @@
 <div class="block shadow-xl rounded-2xl overflow-hidden bg-white relative">
     <div class="absolute -top-20 invisible" id="anschrift"></div>
     <?php if (get_field('google_maps_link')) : ?>
-        <a target="_blank" rel="noopener noreferrer" href="<?php the_field('google_maps_link'); ?>" class="float-right p-2 text-xs text-center italic leading-none">
+        <a target="_blank" rel="noopener noreferrer" href="<?php the_field('google_maps_link'); ?>" class="float-right p-2 text-xs text-center italic leading-none text-gray-400">
             <img src="/wp-content/uploads/2021/10/map_2.png" alt="" class="w-10 h-10 text-center mx-auto mb-1">
             Zur Karte
         </a>
