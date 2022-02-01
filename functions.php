@@ -215,13 +215,12 @@ function ka_override_MCE_options($init)
 {
 
   $custom_colors = '
-		"fabb2b", "Yellow",
-		"e5ebf0", "Light Blue",
-		"003b71", "Medium Blue",
-		"042240", "Dark Blue",
-		"f16061", "Red",
-		"929292", "Medium Gray",
-		"262626", "Charcoal"
+		"A1B57D", "primary",
+		"e5ebf0", "secondary",
+		"ffffff", "white",
+		"000000", "black",
+		"19282F", "dark",
+		"F9FAFB", "light"
 	';
   // build color grid palette
   $init['textcolor_map'] = '[' . $custom_colors . ']';
