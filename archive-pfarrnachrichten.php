@@ -13,7 +13,7 @@
         <div class="flex-1 px-4 pt-4 pb-8 lg:p-8 lg:pt-6">
             <span class="text-gray-600 text-sm">Aktuelle Ausgabe</span>
             <h2 class="mb-4"><?php the_title(); ?></h2>
-            <article class="pfarrnachrichten mb-8">
+            <article class="pfarrnachrichten mb-8 hypens">
 
                 <?php the_content() ?>
 
