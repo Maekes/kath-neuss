@@ -7,7 +7,7 @@
             <img src="<?php the_sub_field('bild'); ?>" alt="" class="w-full h-36 object-cover">
         <?php endif; ?>
     <?php endif; ?>
-    <?php if (get_sub_field('titel') || the_sub_field('inhalt') || get_sub_field('personen') || get_sub_field('button')) : ?>
+    <?php if (get_sub_field('titel') || get_sub_field('inhalt') || get_sub_field('personen') || get_sub_field('button')) : ?>
         <div class="px-4 py-2 space-y-2">
             <?php if (get_sub_field('titel')) : ?>
                 <h3><?php the_sub_field('titel') ?></h3>
