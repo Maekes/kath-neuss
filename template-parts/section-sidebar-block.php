@@ -34,7 +34,7 @@
             <?php if (get_sub_field('button')) :
                 $link_target = get_sub_field("button")['target'] ? get_sub_field("button")['target'] : '_self';
             ?>
-                <a class=" px-4 py-2 rounded-lg bg-green-600 hover:bg-green-700 text-white inline-block" href="<?php echo get_sub_field("button")['url']  ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo get_sub_field("button")['title']  ?></a>
+                <a class=" px-4 py-3 leading-none rounded-lg has-primary-background-color hover:opacity-90 font-semibold  text-white inline-block" href="<?php echo get_sub_field("button")['url']  ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo get_sub_field("button")['title']  ?></a>
             <?php endif; ?>
         </div>
     <?php endif; ?>

@@ -1,4 +1,4 @@
-<p><img src="https://tailpress.io/images/logo.svg" width="200" alt="Laravel Mix"></p>
+https://colorhunt.co/palette/d3eca7a1b57db3303019282f
 
 # Introduction
 TailPress is a minimal boilerplate theme for WordPress using [TailwindCSS](https://tailwindcss.com/), with [PostCSS](https://postcss.org) and [Laravel Mix](https://laravel-mix.com/).

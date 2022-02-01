@@ -123,10 +123,8 @@ span.page-numbers {
     }
 }
 
-.wp-block-buttons {
-    .wp-block-button {
-        @apply mb-4;
-    }
+.wp-block-button__link {
+    @apply rounded-lg px-4 py-3 hover:opacity-90 leading-none font-semibold;
 }
 
 // SLIDER
