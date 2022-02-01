@@ -1,4 +1,9 @@
-<div class="block shadow-xl rounded-2xl overflow-hidden bg-white relative">
+ 
+<?php if (get_sub_field('rahmenfarbe')) : ?>
+    <div class="block shadow-xl rounded-2xl overflow-hidden bg-white relative border-2" style="border-color: <?php the_sub_field('rahmenfarbe'); ?>">
+<?php else: ?>
+    <div class="block shadow-xl rounded-2xl overflow-hidden bg-white relative">
+<?php endif; ?>
 
     <?php if (get_sub_field('bild')) : ?>
         <?php if (get_sub_field('bild_nicht_strecken')) : ?>
