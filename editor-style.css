@@ -468,9 +468,9 @@
   --tw-bg-opacity: 1;
   background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
 }
-.bg-gray-50{
+.bg-sand{
   --tw-bg-opacity: 1;
-  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+  background-color: rgba(255, 253, 247, var(--tw-bg-opacity));
 }
 .bg-red-700{
   --tw-bg-opacity: 1;

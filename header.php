@@ -11,9 +11,9 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class('bg-gray-50 text-gray-900 antialiased relative xl:px-8'); ?>>
+<body class="bg-sand text-gray-900 antialiased relative xl:px-8">
 
-	<div class="fixed flex left-0 right-0 top-2 pb-8 lg:top-4 max-h-screen z-50">
+	<div class=" fixed flex left-0 right-0 top-2 pb-8 lg:top-4 max-h-screen z-50">
 		<header class="max-w-screen-xl w-full mx-auto top-2 lg:top-4 z-50 px-2 flex max-h-screen ">
 			<nav class="bg-white relative lg:backdrop-blur-lg lg:bg-opacity-80 rounded-xl shadow-md overflow-hidden lg:overflow-visible w-full flex flex-col lg:flex-row lg:justify-between lg:items-center px-0 lg:px-2">
 

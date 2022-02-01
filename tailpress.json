@@ -3,7 +3,8 @@
         "primary": "#A1B57D",
         "secondary": "#B33030",
         "dark": "#19282F",
-        "light": "#F9FAFB"
+        "light": "#F9FAFB",
+        "sand": "#fffdf7"
     },
     "fontSizes": {
         "small": ["14px"],
