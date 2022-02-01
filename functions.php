@@ -216,7 +216,7 @@ function ka_override_MCE_options($init)
 
   $custom_colors = '
 		"A1B57D", "primary",
-		"e5ebf0", "secondary",
+		"B33030", "secondary",
 		"ffffff", "white",
 		"000000", "black",
 		"19282F", "dark",
