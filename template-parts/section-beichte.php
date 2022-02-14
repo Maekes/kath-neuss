@@ -1,14 +1,5 @@
 <?php
 
-$parameter = http_build_query(
-    array(
-        'ref' => KAPLAN_REF_ID,
-        'mode' => 'B',
-        'type' => 'json',
-        'Days' => '14',
-    )
-);
-
 $ctx = stream_context_create(
     [
         'https' =>
@@ -21,7 +12,7 @@ $ctx = stream_context_create(
     ]
 );
 
-$url = KAPLAN_URL . $parameter;
+$url = KAPLAN_BEICHTE_CACHE_URL;
 
 $json = file_get_contents($url, false, $ctx);
 
