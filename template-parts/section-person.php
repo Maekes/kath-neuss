@@ -1,6 +1,6 @@
 <div class="sm:block flex items-top space-x-2 sm:space-x-0 text-center bg-white shadow-lg rounded-lg sm:px-2 p-4">
     <div class="rounded-lg sm:rounded-full overflow-hidden flex-none h-48 w-32 sm:h-48 sm:w-48 sm:mx-auto sm:mb-4 shadow-md">
-        <img class="object-cover h-full w-full" src="<?php the_post_thumbnail_url(""); ?>">
+        <img class="object-cover h-full w-full" src="<?php the_post_thumbnail_url("small"); ?>">
     </div>
     <div class="mx-auto w-full">
         <h3 class="font-medium leading-tight pb-1"><?php the_title(); ?></h3>
