@@ -1,6 +1,6 @@
 <div class="flex items-top space-x-4 md:max-w-md">
 
-    <img class="object-cover rounded-lg overflow-hidden flex-none h-40 w-28 shadow-md" src="<?php the_post_thumbnail_url(); ?>">
+    <img class="object-cover rounded-lg overflow-hidden flex-none h-40 w-28 shadow-md" src="<?php the_post_thumbnail_url("small"); ?>">
 
     <div class="mx-auto text-sm text-left">
         <div class="mb-2">
