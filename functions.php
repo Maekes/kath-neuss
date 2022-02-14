@@ -87,6 +87,7 @@ function tailpress_setup()
 
 	// Adding Thumbnail basic support.
 	add_theme_support('post-thumbnails');
+	add_image_size('small size', 400, 400);
 
 	// Block editor.
 	add_theme_support('align-wide');
@@ -214,7 +215,7 @@ function my_acf_init_block_types()
 function ka_override_MCE_options($init)
 {
 
-  $custom_colors = '
+	$custom_colors = '
 		"A1B57D", "primary",
 		"B33030", "secondary",
 		"ffffff", "white",
@@ -222,13 +223,13 @@ function ka_override_MCE_options($init)
 		"19282F", "dark",
 		"F9FAFB", "light"
 	';
-  // build color grid palette
-  $init['textcolor_map'] = '[' . $custom_colors . ']';
+	// build color grid palette
+	$init['textcolor_map'] = '[' . $custom_colors . ']';
 
-  // change the number of rows in the grid if the number of colors changes
-  // 8 swatches per row
-  $init['textcolor_rows'] = 1;
+	// change the number of rows in the grid if the number of colors changes
+	// 8 swatches per row
+	$init['textcolor_rows'] = 1;
 
-  return $init;
+	return $init;
 }
 add_filter('tiny_mce_before_init', 'ka_override_MCE_options');
