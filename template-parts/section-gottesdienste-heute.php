@@ -51,7 +51,7 @@ $json = file_get_contents($url, false, $ctx);
 
         foreach ($messen as $index => $messe) {
 
-            if (strcmp($messe->Gottesdienst, "Exequien") == 0 || $messe->FaelltAus) {
+            if (strpos($messe->Gottesdienst, "Exequien") !== false || $messe->FaelltAus) {
                 continue;
             }
 
