@@ -89,6 +89,9 @@ function tailpress_setup()
 	add_theme_support('post-thumbnails');
 	add_image_size('small', 400, 400);
 	add_image_size('xs', 200, 200);
+	add_filter('jpeg_quality', function ($arg) {
+		return 100;
+	});
 
 	// Block editor.
 	add_theme_support('align-wide');

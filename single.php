@@ -37,7 +37,7 @@
 
 				<a class="block w-full bg-white rounded-lg shadow overflow-hidden simple-scaling xl:opacity-70 hover:opacity-100" href="<?php the_permalink(); ?>">
 					<div class="flex items-center flex-col md:flex-row lg:flex-col">
-						<div class="h-32 md:h-auto lg:h-32 flex-shrink-0 self-stretch w-full md:w-40 lg:w-full bg-cover bg-center border-b md:border-b-0 lg:border-b md:border-gray-100" style="background-image:url(<?php the_post_thumbnail_url(); ?>)"></div>
+						<div class="h-32 md:h-auto lg:h-32 flex-shrink-0 self-stretch w-full md:w-40 lg:w-full bg-cover bg-center border-b md:border-b-0 lg:border-b md:border-gray-100" style="background-image:url(<?php the_post_thumbnail_url("medium"); ?>)"></div>
 						<div class="px-4 py-3">
 							<span class="block text-lg leading-tight font-bold text-black mb-2"><?php the_title(); ?></span>
 							<p class="text-gray-600  leading-snug"><?php echo get_the_excerpt(); ?></p>

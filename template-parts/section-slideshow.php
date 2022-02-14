@@ -40,9 +40,10 @@
             $link = get_sub_field("link");
     ?>
 
+
             <div class="absolute w-full h-full">
 
-                <img src="<?php echo wp_get_attachment_image(the_sub_field("bild"), "medium"); ?>" class="h-full w-full object-cover" alt="">
+                <img src="<?php echo wp_get_attachment_image_src(get_sub_field('bild'), 'large')[0]; ?>" class="h-full w-full object-cover" alt="">
 
                 <section class="absolute bottom-0 flex flex-col w-full">
                     <section class="absolute top-0 opacity-80 bg-gradient-to-t from-black via-black w-full h-full "></section>

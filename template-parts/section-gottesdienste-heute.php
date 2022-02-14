@@ -29,7 +29,7 @@ $json = file_get_contents($url, false, $ctx);
 ?>
 
 <div class="shadow-lg rounded-lg overflow-hidden bg-white divide-y divide-gray-200">
-    <div style="background-image: url(&quot;http://neuss-mitte.de/wp-content/uploads/2020/11/F199CA11-1591-4C7E-9CE2-66EC897068C6.jpeg&quot;); background-size: cover; background-position: left center;">
+    <div style="background-image: url('<?php echo wp_get_attachment_image_src(get_field('hintergrundbild_gottesdienste_heute'), 'small')[0]; ?>'); background-size: cover; background-position: left center;">
         <div class="bg-gradient-to-r from-white via-white opacity-90 z-10">
             <span class="py-4 px-5 text-2xl font-semibold block">Gottesdienste heute</span>
         </div>

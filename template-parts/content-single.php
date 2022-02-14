@@ -1,7 +1,7 @@
 <article id="post-<?php the_ID(); ?>" class="shadow-xl rounded-2xl overflow-hidden bg-white">
 
 	<?php if (has_post_thumbnail($post->ID)) : ?>
-		<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
+		<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?>
 		<div class="overflow-hidden relative">
 			<?php if ($image[1] > $image[2] + 10) : ?>
 				<img src="<?php echo $image[0]; ?>" class="h-52 lg:h-72 w-full object-cover">
