@@ -88,6 +88,7 @@ function tailpress_setup()
 	// Adding Thumbnail basic support.
 	add_theme_support('post-thumbnails');
 	add_image_size('small', 400, 400);
+	add_image_size('xs', 200, 200);
 
 	// Block editor.
 	add_theme_support('align-wide');
