@@ -52,7 +52,7 @@ $json = file_get_contents($url, false, $ctx);
                 <div class="py-2 px-4 lg:px-8  hover:bg-gray-100 odd:bg-gray-50">
                     <p class="font-semibold"><?php echo $datum ?>, <?php echo sprintf("%02d", $messe->TE_von_hh) . ":" . sprintf("%02d", $messe->TE_von_mm) ?> Uhr</p>
                     <p class="font-medium"><?php echo $messe->RA_Bez ?></p>
-                    <p class="font-normal"><?php echo $messe->TE_Bez ?> bei <?php echo $messe->PE_Titel . " " . $messe->PE_Nachname . " " . $messe->Zusatz ?> </p>
+                    <p class="font-normal"><?php echo $messe->TE_Bez . " " . $messe->Zusatz ?> bei <?php echo $messe->PE_Titel . " " . $messe->PE_Nachname  ?> </p>
                 </div>
 
         <?php
